@@ -13,6 +13,9 @@
         fill: $auxiliary-color;
     }
     }
+    &-item:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 .social-link {
         display: flex;
@@ -30,9 +33,11 @@
         background-color: $accent-color;
     }
 }
-@media screen and (max-width: 767px) {
-    .social-list {
-    justify-content: center;
+@media screen and (min-width: 768px) {
+    .social-list-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
