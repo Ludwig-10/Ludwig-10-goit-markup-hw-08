@@ -1,3 +1,4 @@
+
 .work {
     padding-bottom: 94px;
 
@@ -33,4 +34,9 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $auxiliary-color;
+}
+@media screen and (max-width: 1199px) {
+    .work {
+        display: none;
+    }
 }
