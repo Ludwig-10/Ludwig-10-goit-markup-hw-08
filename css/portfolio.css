@@ -717,7 +717,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1,555;
+  line-height: 1.555;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
@@ -733,7 +733,7 @@ img {
     margin-bottom: 30px;
   }
   .overlay-container {
-    padding: 63px 24px;
+    padding: 77px 24px;
   }
 }
 
