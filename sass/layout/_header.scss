@@ -17,7 +17,6 @@
     display: inline-block;
     position: relative;
     color: $bacic-color;
-    // padding: 32px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,12 +137,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
 }
 .mobile-menu {
-    padding: 60px 0;
     text-align: center;
     background: #FFFFFF;
     z-index: 1;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     @media screen and (max-width: 767px) {
+        padding: 60px 0;
         display: none;
         position: absolute;
         top: 100%;
@@ -164,18 +163,56 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0p
     }
     .navigation-list {
         display: flex;
-
+        margin-left: 88px;
         &-item:not(:last-child) {
             margin-right: 50px;
         }
+        &-link {
+            padding: 32px 0;
+        }
     }
-    .navigation-list-link {
+        .header .address {
+        display: flex;
+    margin-left: auto;
+    
+    }
+  
+    .address-mail-link,
+    .address-tel-link {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.02em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header .address {
+        flex-direction: column;
+        align-items: start;
+        
+    margin-left: auto;
+    }
+    .address-mail-link {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .address-mail-link,
+    .address-tel-link {
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.192;
+        letter-spacing: 0.02em;
         padding: 32px 0;
     }
     .header .address {
-    display: flex;
-    flex-direction: column;
-margin-left: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .address .address-mail-link {
+    margin-right: 50px;
 }
 }
 

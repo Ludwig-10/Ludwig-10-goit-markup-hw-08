@@ -14,3 +14,15 @@ padding-bottom: 25px;
 .footer-studio {
     color: $auxiliary-color;
 }
+@media screen and (max-width: 1199px) {
+    .logo {
+        font-size: 24px;
+        line-height: 1.166;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.192;
+    }
+}
