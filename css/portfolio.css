@@ -113,8 +113,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -154,6 +152,17 @@ img {
     white-space: nowrap;
     font-size: 12px;
     line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-form-policy-ladel {
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 
@@ -273,14 +282,12 @@ img {
   display: flex;
   align-items: center;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
 .modal-form-policy-ladel::before {
-  display: inline-block;
+  display: inline-flex;
   content: "";
   width: 16px;
   height: 15px;
@@ -390,8 +397,11 @@ img {
   justify-content: space-between;
 }
 
+.navigation-link {
+  display: flex;
+}
+
 .navigation-list-link {
-  display: inline-block;
   position: relative;
   color: #212121;
   transition-property: color;
@@ -402,8 +412,6 @@ img {
 .navigation-list-link,
 .navigation-list-link .address {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
   letter-spacing: 0.02em;
 }
 
@@ -445,7 +453,7 @@ img {
 .header .address {
   display: flex;
   text-align: center;
-  margin-left: auto;
+  align-items: center;
 }
 
 .navigation-list-link:hover,
@@ -466,7 +474,9 @@ img {
 
 .address-mail-link,
 .address-tel-link {
+  display: flex;
   align-items: center;
+  text-align: center;
   font-style: normal;
   color: #757575;
   transition-property: color, fill;
@@ -527,6 +537,7 @@ img {
 }
 
 .mobile-menu {
+  display: flex;
   text-align: center;
   background: #FFFFFF;
   z-index: 1;
@@ -564,6 +575,7 @@ img {
   }
   .navigation-list-link {
     padding: 32px 0;
+    display: flex;
   }
   .header .address {
     display: flex;
@@ -582,7 +594,6 @@ img {
   .header .address {
     flex-direction: column;
     align-items: start;
-    margin-left: auto;
   }
   .address-mail-link {
     margin-bottom: 10px;
@@ -592,11 +603,9 @@ img {
 @media screen and (min-width: 1200px) {
   .address-mail-link,
   .address-tel-link {
-    align-items: center;
-    text-align: center;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.192;
+    line-height: 1.143;
     letter-spacing: 0.02em;
     padding: 32px 0;
   }

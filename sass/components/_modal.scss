@@ -20,8 +20,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-width: 528px;
-height: 581px;
 background: $auxiliary-color;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
@@ -57,6 +55,16 @@ padding: 40px;
         font-size: 12px;
         line-height: 1.166; 
     }
+}
+}
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    &-form-policy-ladel {
+   font-size: 14px;
+    line-height: 1.7;
+}
 }
 }
 /* =======modal-form ==========*/
@@ -167,13 +175,11 @@ margin-bottom: 12px;
         display: flex;
         align-items: center;
         font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 
     &::before {
-            display: inline-block;
+            display: inline-flex;
             content: "";
             width: 16px;
             height: 15px;
