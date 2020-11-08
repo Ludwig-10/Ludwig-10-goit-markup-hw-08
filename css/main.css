@@ -687,7 +687,6 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -697,7 +696,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
