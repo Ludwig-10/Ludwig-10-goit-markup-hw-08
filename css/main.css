@@ -584,6 +584,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    overflow-y: scroll;
     padding: 60px 0;
     display: none;
     position: absolute;
@@ -594,8 +595,16 @@ img {
   }
   .mobile-menu.is-open {
     display: block;
-    overflow-y: scroll;
   }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {

@@ -14,7 +14,6 @@
     &-link {
         display: flex;
     }
-    
 }
 .navigation-list-link {
     position: relative;
@@ -145,6 +144,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     @media screen and (max-width: 767px) {
+        overflow-y: scroll;
         padding: 60px 0;
         display: none;
         position: absolute;
@@ -154,9 +154,17 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0p
         z-index: 1;
         &.is-open {
             display: block;
-            overflow-y: scroll;
                 }
     }
+}
+@media screen and (max-width: 767px){
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 10;
+background-color: #fff;
 }
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -218,103 +226,3 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0p
     margin-right: 50px;
 }
 }
-
-// .portheader {
-//     border-bottom: 1px solid #ececec;
-// }
-// .header .container {
-//     display: flex;
-//     align-items: center;
-// }
-// .navigation {
-//     display: flex;
-//     align-items: center;
-
-//     &-list {
-//         display: flex;
-
-//         &-item:not(:last-child) {
-//             margin-right: 50px;
-//         }
-//     }
-// }
-// .navigation-list-link {
-//     position: relative;
-//     color: $bacic-color;
-//     padding: 32px 0;
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &,
-//     .address  {
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.143;
-//     letter-spacing: 0.02em;
-//     }
-
-//     &::after {
-//         content: "";
-//         display: block;
-//         position: absolute;
-//         left: 0;
-//         bottom: 0;
-//         width: 100%;
-//         height: 4px;
-//         border-radius: 2px;
-//         background-color: $accent-color;
-//         opacity: 0;
-//     }
-//     .navigation &.current::after {
-//         opacity: 1;
-//     }
-//     .navigation &.current {
-//         color: $accent-color;
-//     }
-// }
-
-// .icon-mail {
-//     width: 16px;
-//     height: 12px;
-//     margin-right: 10px;
-//     fill: $subtitle-collor;
-// }
-// .icon-smartfone {
-//     width: 10px;
-//     height: 16px;
-//       margin-right: 10px;
-//     fill: $subtitle-collor;
-// }
-// .header .address {
-//     display: flex;
-// margin-left: auto;
-// }
-// .address .address-mail-link {
-//     margin-right: 50px;
-// }
-// .navigation-list-link:hover,
-// .navigation-list-link:focus,
-// .address-mail-link:hover,
-// .address-mail-link:focus,
-// .address-tel-link:hover,
-// .address-tel-link:focus {
-// color: $accent-color;
-// }
-// .address-tel-link:hover .icon-smartfone,
-// .address-tel-link:focus .icon-smartfone,
-// .address-mail-link:hover .icon-mail,
-// .address-mail-link:focus .icon-mail {
-//     fill: $accent-color;
-// }
-// .address-mail-link,
-// .address-tel-link {
-//     display: flex;
-//     align-items: center;
-// font-style: normal;
-// color: $subtitle-collor;
-// padding: 32px 0;
-// transition-property: color, fill;
-// transition-duration: 250ms;
-// transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
