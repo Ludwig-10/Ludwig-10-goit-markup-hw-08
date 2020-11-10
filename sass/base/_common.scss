@@ -8,8 +8,9 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: $auxiliary-color;
-    min-width: 480px;
+    min-width: 320px;
     max-width: 1600px;
+    margin: 0 auto;
 }
 
 .list {
