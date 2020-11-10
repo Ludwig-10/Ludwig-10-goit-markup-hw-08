@@ -19,6 +19,7 @@
         transition-property: color, background-color,box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -30,6 +31,7 @@
 
 @media screen and (max-width: 767px) {
     .button-list {
+        margin-top: 76px;
         flex-wrap: wrap;
         justify-content: start;
         margin-bottom: 40px;

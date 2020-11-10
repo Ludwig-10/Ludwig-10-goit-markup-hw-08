@@ -120,6 +120,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
     & .icon-close {
         display: none;
     }
@@ -141,7 +142,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     text-align: center;
     background: #FFFFFF;
-  
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     @media screen and (max-width: 767px) {
         overflow-y: scroll;
@@ -165,6 +165,7 @@ left: 0;
 width: 100%;
 z-index: 10;
 background-color: #fff;
+}
 }
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -218,7 +219,6 @@ background-color: #fff;
         padding: 32px 0;
     }
     .header .address {
-        
         align-items: center;
         text-align: center;
     }

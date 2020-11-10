@@ -1,9 +1,19 @@
 .subtitle {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
     letter-spacing: 0.03em;
     text-align: center;
     color: $bacic-color;
     margin-bottom: 50px;
+    }
+    @media screen and (max-width: 1199px) {
+        .subtitle{
+            font-size: 28px;
+            line-height: 1.178;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .subtitle {
+            font-size: 36px;
+            line-height: 1.167;
+        }
     }
