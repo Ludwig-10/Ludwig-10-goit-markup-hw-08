@@ -33,6 +33,7 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
+  margin-top: 76px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
        rgba(47, 48, 58, 0.4)
